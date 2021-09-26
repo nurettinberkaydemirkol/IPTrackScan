@@ -49,6 +49,6 @@ def scan(ip, port):
 
 #SCAN [FOR]
 with concurrent.futures.ThreadPoolExecutor() as executor:
-    #YOU CAN CHANGE THIS VALUE
+    #YOU CAN CHANGE THIS VALUE [PORT COUNT TO SCAN]
     for port in range(1000):
         executor.submit(scan, ip, port + 1)
